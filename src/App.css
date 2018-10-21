@@ -1,0 +1,71 @@
+@font-face {
+font-family: TitilliumRegular;
+src: url(./font/Titillium-Regular.otf);
+}
+
+.App {
+  text-align: center;
+  min-height: 800px;
+  font-family: TitilliumRegular, Helvetica, Arial, sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.example-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateX(200%);
+  /* transform: scale(0.5) translateY(50%); */
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transform: scale(1) translateX(0%);
+  /* transform: scale(1) translateY(0%); */
+  transition: all 1500ms ease-in;
+}
+.example-enter.example-enter-active:nth-child(n+2){
+  opacity: 0.8;
+  transition: transform 1500ms ease-in;
+}
+.example-enter.example-enter-active:nth-child(n+3){
+  opacity: 0.65;
+  transition: transform 1500ms ease-in;
+}
+
+.example-enter.example-enter-active:nth-child(n+4){
+  opacity: 0.5;
+  transition: transform 1500ms ease-in;
+}
+
+
+.example-leave {
+  opacity: 1;
+  transform: scale(1) translateX(0%);
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateX(200%);
+  transition: all 1000ms ease-out;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
